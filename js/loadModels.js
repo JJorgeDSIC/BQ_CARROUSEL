@@ -27,7 +27,7 @@ function createModel(name, index){
     var model = new THREE.Object3D();
     // model
     var loader = new THREE.OBJLoader( manager );
-    loader.load( '../models/bq/iPhone6_v3.obj', function ( object ) {
+    loader.load( 'models/bq/iPhone6_v3.obj', function ( object ) {
   
         object.traverse( function ( child ) {
 
@@ -129,8 +129,8 @@ function createModelBQCervantes(name, index){
 
 
     var loader = new THREE.ImageLoader( manager );
-    loader.load(  '../models/bq/textures/bq_cercvantes.jpg', function ( image ) {
-    //loader.load(  '../models/bq/textures/bq.png', function ( image ) {
+    loader.load(  'models/bq/textures/bq_cercvantes.jpg', function ( image ) {
+    //loader.load(  'models/bq/textures/bq.png', function ( image ) {
 
         texture.image = image;
         texture.needsUpdate = true;
@@ -142,8 +142,8 @@ function createModelBQCervantes(name, index){
     var model = new THREE.Object3D();
     // model
     var loader = new THREE.OBJLoader( manager );
-    loader.load( '../models/bq/bqCervantes_v2.obj', function ( object ) {
-    //loader.load( '../models/bq/bq_v3.obj', function ( object ) {
+    loader.load( 'models/bq/bqCervantes_v2.obj', function ( object ) {
+    //loader.load( 'models/bq/bq_v3.obj', function ( object ) {
   
         object.traverse( function ( child ) {
 
@@ -254,8 +254,8 @@ function createModelBQ10(name, index){
 
 
     var loader = new THREE.ImageLoader( manager );
-    loader.load(  '../models/bq/textures/bq_aquaris_e10.jpg', function ( image ) {
-    //loader.load(  '../models/bq/textures/bq.png', function ( image ) {
+    loader.load(  'models/bq/textures/bq_aquaris_e10.jpg', function ( image ) {
+    //loader.load(  'models/bq/textures/bq.png', function ( image ) {
 
 
         texture.image = image;
@@ -268,8 +268,8 @@ function createModelBQ10(name, index){
     var model = new THREE.Object3D();
     // model
     var loader = new THREE.OBJLoader( manager );
-    loader.load( '../models/bq/bq10.obj', function ( object ) {
-    //loader.load( '../models/bq/bq_v3.obj', function ( object ) {
+    loader.load( 'models/bq/bq10.obj', function ( object ) {
+    //loader.load( 'models/bq/bq_v3.obj', function ( object ) {
   
         object.traverse( function ( child ) {
 
@@ -378,7 +378,7 @@ function createModelBQ4(name, index){
 
     var loader = new THREE.ImageLoader( manager );
     
-    loader.load(  '../models/bq/textures/bqE4.png', function ( image ) {
+    loader.load(  'models/bq/textures/bqE4.png', function ( image ) {
 
 
         texture.image = image;
@@ -392,7 +392,7 @@ function createModelBQ4(name, index){
     // model
     var loader = new THREE.OBJLoader( manager );
    
-    loader.load( '../models/bq/bq_v3.obj', function ( object ) {
+    loader.load( 'models/bq/bq_v3.obj', function ( object ) {
   
         object.traverse( function ( child ) {
 
@@ -503,7 +503,7 @@ function createModelBQ45(name, index){
 
     var loader = new THREE.ImageLoader( manager );
     
-    loader.load(  '../models/bq/textures/bqE45.png', function ( image ) {
+    loader.load(  'models/bq/textures/bqE45.png', function ( image ) {
 
 
         texture.image = image;
@@ -517,7 +517,7 @@ function createModelBQ45(name, index){
     // model
     var loader = new THREE.OBJLoader( manager );
    
-    loader.load( '../models/bq/bq_v3.obj', function ( object ) {
+    loader.load( 'models/bq/bq_v3.obj', function ( object ) {
   
         object.traverse( function ( child ) {
 
@@ -628,7 +628,7 @@ function createModelBQ5(name, index){
 
     var loader = new THREE.ImageLoader( manager );
     
-    loader.load(  '../models/bq/textures/bqE5.png', function ( image ) {
+    loader.load(  'models/bq/textures/bqE5.png', function ( image ) {
 
 
         texture.image = image;
@@ -642,7 +642,7 @@ function createModelBQ5(name, index){
     // model
     var loader = new THREE.OBJLoader( manager );
    
-    loader.load( '../models/bq/bq_v3.obj', function ( object ) {
+    loader.load( 'models/bq/bq_v3.obj', function ( object ) {
   
         object.traverse( function ( child ) {
 

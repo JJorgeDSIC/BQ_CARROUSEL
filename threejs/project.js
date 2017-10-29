@@ -532,6 +532,8 @@ function checkIntersections(event){
 
     var valueX;
     var valueY;
+
+    console.log(event);
     
     if(event.type != "mousedown"){
         valueX =  event.touches[ 0 ].clientX;
@@ -547,14 +549,15 @@ function checkIntersections(event){
         valueX =  event.clientX;
         valueY =  event.clientY;  
 
-        console.log(valueX);
-        console.log(valueY);
+        //console.log("X="+valueX);
+        //console.log("Y="+valueY);
 
-         mouseVector.x = ( ( valueX - renderer.domElement.offsetLeft ) / renderer.domElement.width ) * 2 - 1;
-         mouseVector.y = - ( ( valueY - renderer.domElement.offsetTop ) / renderer.domElement.height ) * 2 + 1;
+        //mouseVector.x = ( ( valueX - renderer.domElement.offsetLeft ) / renderer.domElement.width ) * 2 - 1;
+        //mouseVector.y = - ( ( valueY - renderer.domElement.offsetTop ) / renderer.domElement.height ) * 2 + 1;
+        mouseVector.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+        mouseVector.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
     }
 
-   
 
     mouseX = mouseVector.x;
     mouseY = mouseVector.y;
@@ -692,8 +695,8 @@ function onDocumentMouseDown( event ) {
 
             if(!selectedItem && !inspectionMode){
 
-                var posx = ( ( event.clientX - renderer.domElement.offsetLeft ) / renderer.domElement.width ) * 2 - 1;
-
+                //var posx = ( ( event.clientX - renderer.domElement.offsetLeft ) / renderer.domElement.width ) * 2 - 1;
+                var posx = ( event.clientX / window.innerWidth ) * 2 - 1;
                 var direction;
 
                 if(posx > 0){
